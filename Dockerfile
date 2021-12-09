@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y python3-pip
 RUN apt-get update && apt-get install -y openjdk-11-jdk
 
 # Install scala
+RUN apt-get update && apt-get install -y curl
 RUN curl -fLo coursier https://git.io/coursier-cli && chmod +x coursier && ./coursier
 
 # Install Jupyter
